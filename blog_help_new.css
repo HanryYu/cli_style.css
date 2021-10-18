@@ -131,20 +131,16 @@
   
 .doc-content .entry-content code {
     font-size: 16px;
-    /* margin: 0 4px; */
     font-weight: normal;
-    color: #1f2329;
-    background: #f1f1f1;
-    border: #f9f9f9;
-    padding: 3px 6px;
+    color: #d78025;
+    background: none;
+    padding: 0;
     font-size: 100%;
-    margin: 0 4px;
+    margin: 2px;
 }
   
 .doc-content .entry-content #write code,
 .doc-content .entry-content tt {
-    margin: 0 2px;
-    padding: 2px 6px;
     border-radius: 6px;
     font-size: 96%;
     background: #f9f9f9;

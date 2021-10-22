@@ -88,8 +88,8 @@
     font-size: 16px;
     font-style: normal;
     position: relative;
-    padding: 16px 22px;
-    background-color: #f9f9f9;
+    padding: 16px 26px;
+    background-color: #f8f8f8;
     color: #1f2329;
     border-radius: .4rem;
     margin-left: 0 !important;
@@ -108,20 +108,20 @@
 }
   
 .doc-content .entry-content blockquote>p {
-    color: #1f2329 !important;
+    color: #1f2329c4 !important
 }
   
-.doc-content .entry-content blockquote>:last-child {
-    color: #1f2329 !important;
-}
-  
+/* .doc-content .entry-content blockquote>:last-child {
+     color: #222830 !important; 
+}   */
+
 .doc-content .entry-content blockquote::before {
     background: none;
 }
   
 .doc-content .entry-content blockquote>p>strong {
     font-weight: 700 !important;
-    color: #1f2329;
+    color: #1f2329c4 !important;
     margin:0 2px
 }
   
@@ -132,6 +132,7 @@
 .doc-content .entry-content code {
     font-size: 16px;
     font-weight: normal;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Noto Sans", "Tahoma", "Arial", "simsun", "sans-serif";
     color: #d78025;
     background: none;
     padding: 0;
@@ -179,14 +180,14 @@
     margin: 16px 0;
 }
   
-  /* .doc-content .entry-content h1+h2 {
-    margin-top: 14px !important
+.doc-content .entry-content h1+h2 {
+    margin-top: 14px !important;
 }
   
 .doc-content .entry-content h2+h3 {
     margin-top: 10px !important;
-} */
-  
+} 
+
 .doc-content .entry-content ol {
     display: block;
     list-style-type: decimal;
@@ -233,7 +234,7 @@
   
 .doc-content .entry-content ul li,
 .doc-content .entry-content ol li {
-    margin: 0;
+    margin: 8px 0;
     left: 0
 }
   
@@ -391,4 +392,42 @@
     margin-top: 12px;
     margin-bottom: 16px;
     max-width: 100%;
+}
+
+
+/*** tag_style ***/
+.up_tag::before {
+	font-size: 60%;
+	padding: 6px 10px;
+	border-radius: 4px;
+	margin-right: 12px;
+	font-weight: 400;
+	position: relative;
+	top: -2px;
+	line-height: 1;
+	display: inline-block;
+}
+
+h1.tag_pc::before {
+	content: 'PC端';
+	background: #21ACE426;
+	color: #21ACE4;
+}
+
+h1.tag_bug::before {
+	content: 'bug修复';
+	background: #F3BB3026;
+	color: #F3BB30;
+}
+
+h1.tag_mina::before {
+	content: '小程序';
+	background: #50AA3826;
+	color: #50AA38;
+}
+
+h1.tag_help::before {
+	content: '服务支持';
+	background: #F57C0026;
+	color: #F57C00;
 }

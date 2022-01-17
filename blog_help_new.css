@@ -59,6 +59,7 @@ body, h1, h2, h3, h4, h5, h6, code, .h1, .h2, .h3, .h4, .h5, .h6{
 
 .doc-content .entry-content h1,
 .doc-content .entry-content h2,
+.doc-content .entry-content h3,
 .doc-content .entry-content strong {
     font-family: -apple-system, 'Pingfang SC', 'Noto Sans SC', 'Microsoft Yahei UI', 'Microsoft Yahei', "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 }

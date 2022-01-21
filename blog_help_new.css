@@ -477,6 +477,13 @@ body, h1, h2, h3, h4, h5, h6, code, .h1, .h2, .h3, .h4, .h5, .h6{
     margin: 1rem 0 2rem;
 }
 
+.doc-content .entry-content img.noshadow {
+    border: none;
+    /* background: var(--cli-img-bg); */
+    border-radius: 6px;
+    transition: .5s;
+}
+
 .doc-content .entry-content img.doublepic {
     max-width: calc(50% - 15px) !important;
     margin: 0px 5px 15px;

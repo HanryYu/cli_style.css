@@ -1,0 +1,481 @@
+@import url('//static.clewm.net/cli/fonts/common_fonts/noto.css');
+
+
+$cli-text: rgba(13, 19, 26, 0.76)
+$cli-text-weak: rgba(13, 19, 26, 0.65)
+$cli-text-highlight: rgba(242, 152, 0, 1)
+$cli-headline: rgba(13, 19, 26, 0.82)
+$cli-headline-weak: rgba(13, 19, 26, 0.65)
+$cli-background: rgba(256, 256, 256, 1)
+$cli-blockquote: rgba(238, 238, 238, 0.48)
+$cli-code-bg: rgba(238, 238, 238, 0.48)
+$cli-action: #357bb3
+$cli-action-active: #2a6496
+$cli-action-block-border: 1px solid rgba(0, 0, 0, 0.05)
+$cli-action-block-hover-border: 1px solid rgba(0, 0, 0, 0.05)
+$cli-action-block-hover-bg: rgba(0, 0, 0, 0.05)
+$cli-img-size: 100%
+$cli-img-border: 1px solid rgba(0, 0, 0, 0.05)
+$cli-img-bg: rgba(0, 0, 0, 0.02)
+$cli-img-hover-shadow: 0 0 8px 0 rgba(220, 220, 220, 0.15), 0 2px 4px 0 rgba(220, 220, 220, 0.6)
+$cli-tag-bg: #f5f5f5
+
+$font-family-type: 2 //1:原始雅黑字体 2:加载思源黑体
+$font-family: -apple-system
+$font-family-base: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', Tahoma, 'Arial', 'simsun', 'sans-serif'
+$font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 'Microsoft Yahei', "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif
+
+@if $font-family-type == 1
+  $font-family: $font-family-base
+@else if $font-family-type == 2
+  $font-family: $font-family-ByeByeYahei
+
+
+.show-detail-info .detail-content .detail_title
+  font-size: 32px
+  font-weight: 600
+  color: $cli-headline
+  font-family: $font-family
+
+
+.wordpress-article-box .wordpress_article_info_box
+
+  h1, h2, h3, h4
+    font-weight: 600
+    color: $cli-headline
+    font-family: $font-family
+    letter-spacing: 1px
+
+  h1
+    font-size: 26px
+    margin: 4rem 0 1.6rem
+    padding: 0
+    line-height: 34px
+
+    // &:hover::before
+    //   content: 'H1'
+    //   font-size: 1rem
+    //   position: absolute
+    //   left: -1.6rem
+    //   color: rgba(0, 0, 0, 0.15)
+    //   transition: all .5s ease-in-out
+    //   width: 50px
+    //   line-height: 2.2rem
+
+  h2
+    font-size: 20px
+    margin: 3rem 0 1rem
+    padding: 0
+    line-height: 28px
+
+    // &:hover::before
+    //   content: 'H2'
+    //   font-size: 0.8rem
+    //   position: absolute
+    //   left: -1.6rem
+    //   color: rgba(0, 0, 0, 0.15)
+    //   transition: all .5s ease-in-out
+    //   width: 50px
+    //   line-height: 2rem
+
+  h3
+    font-size: 17px
+    margin: 2.2rem 0 1rem
+    padding: 0
+    line-height: 22px
+
+    // &:hover::before
+    //   content: 'H3'
+    //   font-size: 0.8rem
+    //   position: absolute
+    //   left: -1.6rem
+    //   color: rgba(0, 0, 0, 0.15)
+    //   transition: all .5s ease-in-out
+    //   width: 50px
+    //   line-height: 1.5rem
+
+  h4
+    font-size: 17px
+    margin: 2rem 0 0rem
+    padding: 0
+    line-height: 22px
+
+  h1 + h2
+    margin-top: 2rem
+
+  h1 + h3
+    margin-top: 1.8rem
+
+  h2 + h3
+    margin-top: 1.6rem
+
+  h1 + p
+    margin-top: 1.4rem
+
+  h2 + p, h3 + p
+    margin-top: 1.2rem
+
+  p
+    font-size: 16px
+    line-height: 28px
+    margin: 0.5rem 0 0.5rem
+    padding: 0
+    letter-spacing: 1px
+    text-align: justify
+
+    &:first-child
+      margin-top: 0
+
+  strong, code
+    font-size: 98%
+    font-weight: normal
+    -webkit-text-stroke: 0.4px
+    -webkit-text-stroke-color: $cli-text
+
+  p, strong, code
+    color: $cli-text
+
+  hr
+    margin: 0
+    padding: 0
+    color: rgba(238, 238, 238, 0.48)
+    margin: 20px 0
+    border-top: 1px solid rgb(238, 238, 238)
+
+  a
+    font-size: 16px
+    color: #357bb3
+    color: $cli-action
+    text-decoration: none
+    -webkit-text-decoration-style: none
+    text-decoration-style: none
+    cursor: pointer
+
+    &:hover
+      color: #2a6496
+      color: $cli-action-active
+      text-decoration: underline
+
+    &.wordpressPdf
+      font-weight: 500
+      padding-left: 20px
+
+      &:before
+        content: ''
+        background-image: url(https://blogcdnimg.clewm.net/pics/2022/01/PDF-deep-rKDo1r.png)
+        background-size: 18px 18px
+        position: absolute
+        width: 18px
+        height: 18px
+        left: -2px
+        margin-top: 7px
+
+    &.wordpressWord
+      font-weight: 500
+      padding-left: 20px
+
+      &:before
+        content: ''
+        background-image: url(https://blogcdnimg.clewm.net/pics/2022/01/Word-deep-MKBRKa.png)
+        background-size: 18px 18px
+        position: absolute
+        width: 18px
+        height: 18px
+        left: -2px
+        margin-top: 7px
+
+    &.wordpressExcel
+      font-weight: 500
+      padding-left: 20px
+
+      &:before
+        content: ''
+        background-image: url(https://blogcdnimg.clewm.net/pics/2022/01/EXCEL-deep-pedziD.png)
+        background-size: 18px 18px
+        position: absolute
+        width: 18px
+        height: 18px
+        left: -2px
+        margin-top: 7px
+
+    &.blocklink
+      border: $cli-action-block-border
+      border-radius: 6px
+      padding: 0.5rem 1rem
+
+  ol
+    display: block
+    list-style-type: decimal
+    -webkit-margin-before: 1em
+    color: $cli-text
+    margin-block-start: 1em
+    -webkit-margin-after: 1em
+    margin-block-end: 1em
+    -webkit-margin-start: 0px
+    -moz-margin-start: 0px
+    margin-inline-start: 0px
+    -webkit-margin-end: 0px
+    -moz-margin-end: 0px
+    margin-inline-end: 0px
+    -webkit-padding-start: 20px
+    -moz-padding-start: 20px
+    padding-inline-start: 20px
+
+  ul
+    display: block
+    list-style-type: disc
+    -webkit-margin-before: 1em
+    color: $cli-text
+    margin-block-start: 1em
+    -webkit-margin-after: 1em
+    margin-block-end: 1em
+    -webkit-margin-start: 0px
+    -moz-margin-start: 0px
+    margin-inline-start: 0px
+    -webkit-margin-end: 0px
+    -moz-margin-end: 0px
+    margin-inline-end: 0px
+    -webkit-padding-start: 20px
+    -moz-padding-start: 20px
+    padding-inline-start: 20px
+
+  li
+    font-size: 16px
+    line-height: 28px
+    margin: 0 0 1.2rem
+    padding: 0
+    color: $cli-text
+    letter-spacing: 1px
+
+  ul > li::before
+    position: absolute
+    content: ''
+    left: -19px
+    top: 12px
+    top: calc(1em - 4px)
+    background: $cli-text
+    width: 4px
+    height: 4px
+    border-radius: 50%
+
+  ol
+    margin: 16px 0
+    font-size: 16px
+
+  ul
+    margin: 16px 0
+    font-size: 16px
+
+    li
+      margin: 8px 0
+      left: 0
+
+  ol li
+    margin: 8px 0
+    left: 0
+
+  li + li
+    margin-top: 2px
+
+  ol > li
+    list-style-type: decimal
+
+  ul > li
+    list-style-type: none
+    position: relative
+
+    > ul > li
+      list-style-type: circle
+
+      > ul > li
+        list-style-type: square
+
+    p
+      margin-bottom: 0
+
+  ol > li p
+    margin-bottom: 0
+
+  ul > li > ul > li
+    list-style-type: circle
+
+    > ul > li
+      list-style-type: square
+
+  code
+    font-size: 98%
+    font-weight: 600
+    background: none
+    padding: 0
+    margin: 0
+    font-family: $font-family
+
+  tt
+    border-radius: 6px
+    font-size: 96%
+    background: #f9f9f9
+    display: inline
+    vertical-align: bottom
+    line-height: 26px
+
+  table
+    font-size: 16px
+    margin: 20px 0px
+
+    th
+      background: #DBEEF3
+      font-weight: 500
+      line-height: 2
+
+  code, tt
+    color: $cli-text
+
+  table
+    color: $cli-text
+
+    > strong, th
+      color: $cli-text
+
+  img
+    border: $cli-img-border
+    width: $cli-img-size
+    background: $cli-img-bg
+    border-radius: 6px
+    transition: .5s
+
+    &:hover
+      cursor: zoom-in !important
+
+    &.noshadow
+      border: none !important
+    
+    .doublepic
+      max-width: calc(50% - 15px) !important
+      margin-right: 15px
+
+
+  p.img_p +
+    h3, h4
+      margin-top: 2.5rem
+
+  video
+    border: $cli-img-border
+    border-radius: 6px
+    transition: .5s
+
+  p.img_p
+    margin: 1rem 0 2rem
+
+  img
+    &.doublepic
+      max-width: calc(50% - 15px) !important
+      margin: 0px 5px 15px
+
+    &.smallpic25
+      width: 200px
+
+    &.smallpic50
+      width: 400px
+
+    &.smallpic75
+      width: 600px
+
+  blockquote
+    font-size: 16px
+    font-style: normal
+    position: relative
+    padding: 1.2rem 2rem
+    background-color: $cli-blockquote
+    border-radius: 6px
+    margin-left: 0 !important
+    border: none
+    margin: 1.2rem 0
+
+    >
+      \:last-child
+        margin-bottom: 0
+
+      p
+        color: $cli-text-weak !important
+
+        > strong
+          color: $cli-text-weak !important
+
+  .center
+    text-align: center
+  
+  > *:first-child
+    margin-top: 0px !important
+
+.up_tag::after
+  font-size: 50% !important
+  padding: 4px 8px
+  border-radius: 4px
+  margin-left: 12px
+  font-weight: 400
+  position: relative
+  top: -2px
+  line-height: 1
+  display: inline-block
+
+// h1
+//   &.tag_pc::after
+//     content: 'PC端'
+//     background: $cli-tag-bg
+//     color: $cli-text-weak
+
+//   &.tag_bug::after
+//     content: 'bug修复'
+//     background: $cli-tag-bg
+//     color: $cli-text-weak
+
+//   &.tag_mina::after
+//     content: '小程序'
+//     background: $cli-tag-bg
+//     color: $cli-text-weak
+
+//   &.tag_help::after
+//     content: '帮助中心'
+//     background: $cli-tag-bg
+//     color: $cli-text-weak
+
+//   &.tag_wxwork::after
+//     content: '企业微信'
+//     background: $cli-tag-bg
+//     color: $cli-text-weak
+
+.blueblock
+  font-size: 16px
+  font-style: normal
+  position: relative
+  padding: 1.2rem 2rem
+  background-color: #E1EAFF
+  color: $cli-text-weak
+  border-radius: 6px
+  margin-left: 0 !important
+  border: none
+  margin: 1.2rem 0
+
+.yellowblock
+  font-size: 16px
+  font-style: normal
+  position: relative
+  padding: 1.2rem 2rem
+  background-color: #FCF4E9
+  color: $cli-text-weak
+  border-radius: 6px
+  margin-left: 0 !important
+  border: none
+  margin: 1.2rem 0
+
+//Other style
+.case-detail-content .code-case-tpl h3,
+.case-detail-content .customer-case h3,
+.case-detail-content .application-solution h3,
+.case-detail-content .comments-stats h4
+  font-size: 26px !important
+  font-weight: 600
+  color: $cli-headline
+  font-family: $font-family
+  letter-spacing: 1px
+

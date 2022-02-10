@@ -1,0 +1,452 @@
+@import url("//static.clewm.net/cli/fonts/common_fonts/noto.css");
+.show-detail-info .detail-content .detail_title {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(13, 19, 26, 0.82);
+  font-family: "Pingfang SC", "Noto Sans SC", "Microsoft Yahei UI", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.wordpress-article-box .wordpress_article_info_box h1, .wordpress-article-box .wordpress_article_info_box h2, .wordpress-article-box .wordpress_article_info_box h3, .wordpress-article-box .wordpress_article_info_box h4 {
+  font-weight: 600;
+  color: rgba(13, 19, 26, 0.82);
+  font-family: "Pingfang SC", "Noto Sans SC", "Microsoft Yahei UI", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+  letter-spacing: 1px;
+}
+
+.wordpress-article-box .wordpress_article_info_box h1 {
+  font-size: 26px;
+  margin: 4rem 0 1.6rem;
+  padding: 0;
+  line-height: 34px;
+}
+
+.wordpress-article-box .wordpress_article_info_box h2 {
+  font-size: 20px;
+  margin: 3rem 0 1rem;
+  padding: 0;
+  line-height: 28px;
+}
+
+.wordpress-article-box .wordpress_article_info_box h3 {
+  font-size: 17px;
+  margin: 2.2rem 0 1rem;
+  padding: 0;
+  line-height: 22px;
+}
+
+.wordpress-article-box .wordpress_article_info_box h4 {
+  font-size: 17px;
+  margin: 2rem 0 0rem;
+  padding: 0;
+  line-height: 22px;
+}
+
+.wordpress-article-box .wordpress_article_info_box h1 + h2 {
+  margin-top: 2rem;
+}
+
+.wordpress-article-box .wordpress_article_info_box h1 + h3 {
+  margin-top: 1.8rem;
+}
+
+.wordpress-article-box .wordpress_article_info_box h2 + h3 {
+  margin-top: 1.6rem;
+}
+
+.wordpress-article-box .wordpress_article_info_box h1 + p {
+  margin-top: 1.4rem;
+}
+
+.wordpress-article-box .wordpress_article_info_box h2 + p, .wordpress-article-box .wordpress_article_info_box h3 + p {
+  margin-top: 1.2rem;
+}
+
+.wordpress-article-box .wordpress_article_info_box p {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0.5rem 0 0.5rem;
+  padding: 0;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.wordpress-article-box .wordpress_article_info_box p:first-child {
+  margin-top: 0;
+}
+
+.wordpress-article-box .wordpress_article_info_box strong, .wordpress-article-box .wordpress_article_info_box code {
+  font-size: 98%;
+  font-weight: normal;
+  -webkit-text-stroke: 0.4px;
+  -webkit-text-stroke-color: rgba(13, 19, 26, 0.76);
+}
+
+.wordpress-article-box .wordpress_article_info_box p, .wordpress-article-box .wordpress_article_info_box strong, .wordpress-article-box .wordpress_article_info_box code {
+  color: rgba(13, 19, 26, 0.76);
+}
+
+.wordpress-article-box .wordpress_article_info_box hr {
+  margin: 0;
+  padding: 0;
+  color: rgba(238, 238, 238, 0.48);
+  margin: 20px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.wordpress-article-box .wordpress_article_info_box a {
+  font-size: 16px;
+  color: #357bb3;
+  color: #357bb3;
+  text-decoration: none;
+  -webkit-text-decoration-style: none;
+  text-decoration-style: none;
+  cursor: pointer;
+}
+
+.wordpress-article-box .wordpress_article_info_box a:hover {
+  color: #2a6496;
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+.wordpress-article-box .wordpress_article_info_box a.wordpressPdf {
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.wordpress-article-box .wordpress_article_info_box a.wordpressPdf:before {
+  content: '';
+  background-image: url(https://blogcdnimg.clewm.net/pics/2022/01/PDF-deep-rKDo1r.png);
+  background-size: 18px 18px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -2px;
+  margin-top: 7px;
+}
+
+.wordpress-article-box .wordpress_article_info_box a.wordpressWord {
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.wordpress-article-box .wordpress_article_info_box a.wordpressWord:before {
+  content: '';
+  background-image: url(https://blogcdnimg.clewm.net/pics/2022/01/Word-deep-MKBRKa.png);
+  background-size: 18px 18px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -2px;
+  margin-top: 7px;
+}
+
+.wordpress-article-box .wordpress_article_info_box a.wordpressExcel {
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.wordpress-article-box .wordpress_article_info_box a.wordpressExcel:before {
+  content: '';
+  background-image: url(https://blogcdnimg.clewm.net/pics/2022/01/EXCEL-deep-pedziD.png);
+  background-size: 18px 18px;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -2px;
+  margin-top: 7px;
+}
+
+.wordpress-article-box .wordpress_article_info_box a.blocklink {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.wordpress-article-box .wordpress_article_info_box ol {
+  display: block;
+  list-style-type: decimal;
+  -webkit-margin-before: 1em;
+  color: rgba(13, 19, 26, 0.76);
+  margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+  margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  -webkit-padding-start: 20px;
+  padding-inline-start: 20px;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  color: rgba(13, 19, 26, 0.76);
+  margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+  margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  -webkit-padding-start: 20px;
+  padding-inline-start: 20px;
+}
+
+.wordpress-article-box .wordpress_article_info_box li {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 0 1.2rem;
+  padding: 0;
+  color: rgba(13, 19, 26, 0.76);
+  letter-spacing: 1px;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul > li::before {
+  position: absolute;
+  content: '';
+  left: -19px;
+  top: 12px;
+  top: calc(1em - 4px);
+  background: rgba(13, 19, 26, 0.76);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.wordpress-article-box .wordpress_article_info_box ol {
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul {
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul li {
+  margin: 8px 0;
+  left: 0;
+}
+
+.wordpress-article-box .wordpress_article_info_box ol li {
+  margin: 8px 0;
+  left: 0;
+}
+
+.wordpress-article-box .wordpress_article_info_box li + li {
+  margin-top: 2px;
+}
+
+.wordpress-article-box .wordpress_article_info_box ol > li {
+  list-style-type: decimal;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul > li {
+  list-style-type: none;
+  position: relative;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul > li > ul > li {
+  list-style-type: circle;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul > li > ul > li > ul > li {
+  list-style-type: square;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul > li p {
+  margin-bottom: 0;
+}
+
+.wordpress-article-box .wordpress_article_info_box ol > li p {
+  margin-bottom: 0;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul > li > ul > li {
+  list-style-type: circle;
+}
+
+.wordpress-article-box .wordpress_article_info_box ul > li > ul > li > ul > li {
+  list-style-type: square;
+}
+
+.wordpress-article-box .wordpress_article_info_box code {
+  font-size: 98%;
+  font-weight: 600;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Pingfang SC", "Noto Sans SC", "Microsoft Yahei UI", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.wordpress-article-box .wordpress_article_info_box tt {
+  border-radius: 6px;
+  font-size: 96%;
+  background: #f9f9f9;
+  display: inline;
+  vertical-align: bottom;
+  line-height: 26px;
+}
+
+.wordpress-article-box .wordpress_article_info_box table {
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+.wordpress-article-box .wordpress_article_info_box table th {
+  background: #DBEEF3;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.wordpress-article-box .wordpress_article_info_box code, .wordpress-article-box .wordpress_article_info_box tt {
+  color: rgba(13, 19, 26, 0.76);
+}
+
+.wordpress-article-box .wordpress_article_info_box table {
+  color: rgba(13, 19, 26, 0.76);
+}
+
+.wordpress-article-box .wordpress_article_info_box table > strong, .wordpress-article-box .wordpress_article_info_box table th {
+  color: rgba(13, 19, 26, 0.76);
+}
+
+.wordpress-article-box .wordpress_article_info_box img {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wordpress-article-box .wordpress_article_info_box img:hover {
+  cursor: -webkit-zoom-in !important;
+  cursor: zoom-in !important;
+}
+
+.wordpress-article-box .wordpress_article_info_box img.noshadow {
+  border: none !important;
+}
+
+.wordpress-article-box .wordpress_article_info_box img .doublepic {
+  max-width: calc(50% - 15px) !important;
+  margin-right: 15px;
+}
+
+.wordpress-article-box .wordpress_article_info_box p.img_p + h3, .wordpress-article-box .wordpress_article_info_box p.img_p + h4 {
+  margin-top: 2.5rem;
+}
+
+.wordpress-article-box .wordpress_article_info_box video {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wordpress-article-box .wordpress_article_info_box p.img_p {
+  margin: 1rem 0 2rem;
+}
+
+.wordpress-article-box .wordpress_article_info_box img.doublepic {
+  max-width: calc(50% - 15px) !important;
+  margin: 0px 5px 15px;
+}
+
+.wordpress-article-box .wordpress_article_info_box img.smallpic25 {
+  width: 200px;
+}
+
+.wordpress-article-box .wordpress_article_info_box img.smallpic50 {
+  width: 400px;
+}
+
+.wordpress-article-box .wordpress_article_info_box img.smallpic75 {
+  width: 600px;
+}
+
+.wordpress-article-box .wordpress_article_info_box blockquote {
+  font-size: 16px;
+  font-style: normal;
+  position: relative;
+  padding: 1.2rem 2rem;
+  background-color: rgba(238, 238, 238, 0.48);
+  border-radius: 6px;
+  margin-left: 0 !important;
+  border: none;
+  margin: 1.2rem 0;
+}
+
+.wordpress-article-box .wordpress_article_info_box blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.wordpress-article-box .wordpress_article_info_box blockquote > p {
+  color: rgba(13, 19, 26, 0.65) !important;
+}
+
+.wordpress-article-box .wordpress_article_info_box blockquote > p > strong {
+  color: rgba(13, 19, 26, 0.65) !important;
+}
+
+.wordpress-article-box .wordpress_article_info_box .center {
+  text-align: center;
+}
+
+.wordpress-article-box .wordpress_article_info_box > *:first-child {
+  margin-top: 0px !important;
+}
+
+.up_tag::after {
+  font-size: 50% !important;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 12px;
+  font-weight: 400;
+  position: relative;
+  top: -2px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.blueblock {
+  font-size: 16px;
+  font-style: normal;
+  position: relative;
+  padding: 1.2rem 2rem;
+  background-color: #E1EAFF;
+  color: rgba(13, 19, 26, 0.65);
+  border-radius: 6px;
+  margin-left: 0 !important;
+  border: none;
+  margin: 1.2rem 0;
+}
+
+.yellowblock {
+  font-size: 16px;
+  font-style: normal;
+  position: relative;
+  padding: 1.2rem 2rem;
+  background-color: #FCF4E9;
+  color: rgba(13, 19, 26, 0.65);
+  border-radius: 6px;
+  margin-left: 0 !important;
+  border: none;
+  margin: 1.2rem 0;
+}
+
+.case-detail-content .code-case-tpl h3,
+.case-detail-content .customer-case h3,
+.case-detail-content .application-solution h3,
+.case-detail-content .comments-stats h4 {
+  font-size: 26px !important;
+  font-weight: 600;
+  color: rgba(13, 19, 26, 0.82);
+  font-family: "Pingfang SC", "Noto Sans SC", "Microsoft Yahei UI", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=solutions_new.css.map */

@@ -345,6 +345,14 @@
   margin-right: 15px;
 }
 
+.doc-content .entry-content p.img_p + h1 {
+  margin-top: 3.2rem;
+}
+
+.doc-content .entry-content p.img_p + h2 {
+  margin-top: 3rem;
+}
+
 .doc-content .entry-content p.img_p + h3, .doc-content .entry-content p.img_p + h4 {
   margin-top: 2.5rem;
 }

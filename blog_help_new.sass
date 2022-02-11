@@ -25,6 +25,8 @@ $font-family-type: 2 //1:原始雅黑字体 2:加载思源黑体
 $font-family: -apple-system
 $font-family-base: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', Tahoma, 'Arial', 'simsun', 'sans-serif'
 $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 'Microsoft Yahei', "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif
+//$font-family-PingfangSC: "Pingfang SC", 'Microsoft Yahei UI', 'Microsoft Yahei', "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif
+
 
 @if $font-family-type == 1
   $font-family: $font-family-base
@@ -131,6 +133,7 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
     padding: 0
     letter-spacing: 1px
     text-align: justify
+    // font-family: $font-family-PingfangSC
 
     &:first-child
       margin-top: 0
@@ -360,6 +363,10 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
       margin-right: 15px
 
   p.img_p +
+    h1
+      margin-top: 3.2rem
+    h2
+      margin-top: 3rem
     h3, h4
       margin-top: 2.5rem
 

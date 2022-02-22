@@ -10,7 +10,7 @@ $cli-background: rgba(256, 256, 256, 1)
 $cli-blockquote: rgba(238, 238, 238, 0.48)
 $cli-code-bg: rgba(238, 238, 238, 0.48)
 $cli-action: #357bb3
-$cli-action-active: #2a6496
+$cli-action-active: #114A78
 $cli-action-block-border: 1px solid rgba(0, 0, 0, 0.05)
 $cli-action-block-hover-border: 1px solid rgba(0, 0, 0, 0.05)
 $cli-action-block-hover-bg: rgba(0, 0, 0, 0.05)
@@ -23,7 +23,7 @@ $cli-tag-bg: #f5f5f5
 
 $font-family-type: 2 //1:原始雅黑字体 2:加载思源黑体
 $font-family: -apple-system
-$font-family-base: 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', Tahoma, 'Arial', 'simsun', 'sans-serif'
+$font-family-base: "Pingfang SC", 'Microsoft YaHei UI', 'Microsoft YaHei', 'Helvetica Neue', 'Hiragino Sans GB', Tahoma, 'Arial', 'simsun', 'sans-serif'
 $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 'Microsoft Yahei', "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif
 //$font-family-PingfangSC: "Pingfang SC", 'Microsoft Yahei UI', 'Microsoft Yahei', "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif
 
@@ -40,7 +40,7 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
   color: $cli-headline
   padding: 5px 0 0
   margin-bottom: 1.4rem
-  font-weight: 600
+  font-weight: 500
   font-family: $font-family
 
 .entry-content :first-child
@@ -48,7 +48,7 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
 
 .doc-content .entry-content
   h1, h2, h3, h4, h5, h6
-    font-weight: 600
+    font-weight: 500 !important
     font-family: $font-family
 
 
@@ -73,7 +73,7 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
     //   line-height: 2.2rem
 
   h2
-    font-size: 20px
+    font-size: 21px
     margin: 2rem 0 1rem
     padding: 0
     line-height: 28px
@@ -133,7 +133,7 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
     padding: 0
     letter-spacing: 1px
     text-align: justify
-    // font-family: $font-family-PingfangSC
+    font-family: $font-family-base
 
     &:first-child
       margin-top: 0
@@ -141,8 +141,8 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
   strong, code
     font-size: 98%
     font-weight: normal
-    -webkit-text-stroke: 0.4px
-    -webkit-text-stroke-color: $cli-text
+    -webkit-text-stroke: 0.4px $cli-text
+    font-family: $font-family-base
 
   p, strong, code
     color: $cli-text
@@ -156,17 +156,18 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
 
   a
     font-size: 16px
-    color: #357bb3
     color: $cli-action
+    transition: .2s
     text-decoration: none
     -webkit-text-decoration-style: none
     text-decoration-style: none
     cursor: pointer
 
     &:hover
-      color: #2a6496
       color: $cli-action-active
-      text-decoration: underline
+
+    &:focus
+      color: $cli-action !important
 
     &.wordpressPdf
       font-weight: 500
@@ -215,24 +216,7 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
       border-radius: 6px
       padding: 0.5rem 1rem
 
-  ol
-    display: block
-    list-style-type: decimal
-    -webkit-margin-before: 1em
-    color: $cli-text
-    margin-block-start: 1em
-    -webkit-margin-after: 1em
-    margin-block-end: 1em
-    -webkit-margin-start: 0px
-    -moz-margin-start: 0px
-    margin-inline-start: 0px
-    -webkit-margin-end: 0px
-    -moz-margin-end: 0px
-    margin-inline-end: 0px
-    -webkit-padding-start: 20px
-    -moz-padding-start: 20px
-    padding-inline-start: 20px
-
+  ol,
   ul
     display: block
     list-style-type: disc
@@ -270,6 +254,11 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
     height: 4px
     border-radius: 50%
 
+  ol > li::before
+    position: absolute
+    left: -19px
+    content: counter(list-item) '.'
+
   ol
     margin: 16px 0
     font-size: 16px
@@ -289,9 +278,7 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
   li + li
     margin-top: 2px
 
-  ol > li
-    list-style-type: decimal
-
+  ol > li,
   ul > li
     list-style-type: none
     position: relative
@@ -315,11 +302,9 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
       list-style-type: square
 
   code
-    font-size: 98%
     background: none
     padding: 0
     margin: 0
-    font-family: $font-family
 
   tt
     border-radius: 6px
@@ -458,22 +443,49 @@ $font-family-ByeByeYahei:  "Pingfang SC", 'Noto Sans SC', 'Microsoft Yahei UI', 
   font-size: 16px
   font-style: normal
   position: relative
-  padding: 1.2rem 2rem
-  background-color: #E1EAFF
-  color: $cli-text-weak
+  padding: 1rem 1.8rem
+  background-color: $cli-blockquote
   border-radius: 6px
   margin-left: 0 !important
   border: none
   margin: 1.2rem 0
 
+  >
+    \:last-child
+      margin-bottom: 0
+
+    p
+      color: $cli-text-weak !important
+
+      > strong
+        color: $cli-text-weak !important
+
 .yellowblock
   font-size: 16px
   font-style: normal
   position: relative
-  padding: 1.2rem 2rem
-  background-color: #FCF4E9
-  color: $cli-text-weak
+  padding: 1rem 1.8rem
+  background-color: $cli-blockquote
   border-radius: 6px
   margin-left: 0 !important
   border: none
   margin: 1.2rem 0
+
+  >
+    \:last-child
+      margin-bottom: 0
+
+    p
+      color: $cli-text-weak !important
+
+      > strong
+        color: $cli-text-weak !important
+
+.case-detail-side-container.affix
+  font-family: $font-family-base
+
+.case-detail-side-container .case-detail-side-title
+  font-family: $font-family-base
+
+#faq .faq-main .nav-tabs
+  font-family: $font-family-base

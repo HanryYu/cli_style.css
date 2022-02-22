@@ -1,13 +1,13 @@
 @import url("//static.clewm.net/cli/fonts/common_fonts/noto.css");
 .show-detail-info .detail-content .detail_title {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(13, 19, 26, 0.82);
   font-family: "Pingfang SC", "Noto Sans SC", "Microsoft Yahei UI", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 }
 
 .wordpress-article-box .wordpress_article_info_box h1, .wordpress-article-box .wordpress_article_info_box h2, .wordpress-article-box .wordpress_article_info_box h3, .wordpress-article-box .wordpress_article_info_box h4 {
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(13, 19, 26, 0.82);
   font-family: "Pingfang SC", "Noto Sans SC", "Microsoft Yahei UI", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
   letter-spacing: 1px;
@@ -21,7 +21,7 @@
 }
 
 .wordpress-article-box .wordpress_article_info_box h2 {
-  font-size: 20px;
+  font-size: 21px;
   margin: 3rem 0 1rem;
   padding: 0;
   line-height: 28px;
@@ -96,7 +96,6 @@
 .wordpress-article-box .wordpress_article_info_box a {
   font-size: 16px;
   color: #357bb3;
-  color: #357bb3;
   text-decoration: none;
   -webkit-text-decoration-style: none;
   text-decoration-style: none;
@@ -104,9 +103,11 @@
 }
 
 .wordpress-article-box .wordpress_article_info_box a:hover {
-  color: #2a6496;
-  color: #2a6496;
-  text-decoration: underline;
+  color: #114A78;
+}
+
+.wordpress-article-box .wordpress_article_info_box a:focus {
+  color: #357bb3 !important;
 }
 
 .wordpress-article-box .wordpress_article_info_box a.wordpressPdf {
@@ -163,22 +164,7 @@
   padding: 0.5rem 1rem;
 }
 
-.wordpress-article-box .wordpress_article_info_box ol {
-  display: block;
-  list-style-type: decimal;
-  -webkit-margin-before: 1em;
-  color: rgba(13, 19, 26, 0.76);
-  margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-  margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-  margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-  margin-inline-end: 0px;
-  -webkit-padding-start: 20px;
-  padding-inline-start: 20px;
-}
-
+.wordpress-article-box .wordpress_article_info_box ol,
 .wordpress-article-box .wordpress_article_info_box ul {
   display: block;
   list-style-type: disc;
@@ -216,6 +202,12 @@
   border-radius: 50%;
 }
 
+.wordpress-article-box .wordpress_article_info_box ol > li::before {
+  position: absolute;
+  left: -19px;
+  content: counter(list-item) ".";
+}
+
 .wordpress-article-box .wordpress_article_info_box ol {
   margin: 16px 0;
   font-size: 16px;
@@ -240,23 +232,23 @@
   margin-top: 2px;
 }
 
-.wordpress-article-box .wordpress_article_info_box ol > li {
-  list-style-type: decimal;
-}
-
+.wordpress-article-box .wordpress_article_info_box ol > li,
 .wordpress-article-box .wordpress_article_info_box ul > li {
   list-style-type: none;
   position: relative;
 }
 
+.wordpress-article-box .wordpress_article_info_box ol > li > ul > li,
 .wordpress-article-box .wordpress_article_info_box ul > li > ul > li {
   list-style-type: circle;
 }
 
+.wordpress-article-box .wordpress_article_info_box ol > li > ul > li > ul > li,
 .wordpress-article-box .wordpress_article_info_box ul > li > ul > li > ul > li {
   list-style-type: square;
 }
 
+.wordpress-article-box .wordpress_article_info_box ol > li p,
 .wordpress-article-box .wordpress_article_info_box ul > li p {
   margin-bottom: 0;
 }
@@ -275,7 +267,7 @@
 
 .wordpress-article-box .wordpress_article_info_box code {
   font-size: 98%;
-  font-weight: 600;
+  font-weight: 500;
   background: none;
   padding: 0;
   margin: 0;
@@ -417,26 +409,48 @@
   font-size: 16px;
   font-style: normal;
   position: relative;
-  padding: 1.2rem 2rem;
-  background-color: #E1EAFF;
-  color: rgba(13, 19, 26, 0.65);
+  padding: 1rem 1.8rem;
+  background-color: rgba(238, 238, 238, 0.48);
   border-radius: 6px;
   margin-left: 0 !important;
   border: none;
   margin: 1.2rem 0;
 }
 
+.blueblock > :last-child {
+  margin-bottom: 0;
+}
+
+.blueblock > p {
+  color: rgba(13, 19, 26, 0.65) !important;
+}
+
+.blueblock > p > strong {
+  color: rgba(13, 19, 26, 0.65) !important;
+}
+
 .yellowblock {
   font-size: 16px;
   font-style: normal;
   position: relative;
-  padding: 1.2rem 2rem;
-  background-color: #FCF4E9;
-  color: rgba(13, 19, 26, 0.65);
+  padding: 1rem 1.8rem;
+  background-color: rgba(238, 238, 238, 0.48);
   border-radius: 6px;
   margin-left: 0 !important;
   border: none;
   margin: 1.2rem 0;
+}
+
+.yellowblock > :last-child {
+  margin-bottom: 0;
+}
+
+.yellowblock > p {
+  color: rgba(13, 19, 26, 0.65) !important;
+}
+
+.yellowblock > p > strong {
+  color: rgba(13, 19, 26, 0.65) !important;
 }
 
 .case-detail-content .code-case-tpl h3,
@@ -444,9 +458,16 @@
 .case-detail-content .application-solution h3,
 .case-detail-content .comments-stats h4 {
   font-size: 26px !important;
-  font-weight: 600;
+  font-weight: 500;
   color: rgba(13, 19, 26, 0.82);
   font-family: "Pingfang SC", "Noto Sans SC", "Microsoft Yahei UI", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
   letter-spacing: 1px;
+  line-height: 34px;
+}
+
+.case-detail-content .code-case-tpl .case-li .case-item .case-item-title {
+  font-weight: 500;
+  color: rgba(13, 19, 26, 0.82);
+  font-family: "Pingfang SC", "Noto Sans SC", "Microsoft Yahei UI", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", "Helvetica", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
 }
 /*# sourceMappingURL=solutions_new.css.map */
